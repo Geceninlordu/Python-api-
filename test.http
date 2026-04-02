@@ -1,0 +1,31 @@
+### Tüm notları listele
+GET http://127.0.0.1:5000/api/notlar
+Content-Type: application/json
+
+###
+
+### Yeni not ekle
+POST http://127.0.0.1:5000/api/notlar
+Content-Type: application/json
+
+{
+    "baslik": "İlk Notum",
+    "icerik": "Bu benim ilk notum."
+}
+
+###
+
+### Notu güncelle (id=1)
+PUT http://127.0.0.1:5000/api/notlar/1
+Content-Type: application/json
+
+{
+    "baslik": "Güncellenmiş Başlık",
+    "icerik": "Güncellenmiş içerik"
+}
+
+###
+
+### Notu sil (id=1)
+DELETE http://127.0.0.1:5000/api/notlar/1
+Content-Type: application/json
